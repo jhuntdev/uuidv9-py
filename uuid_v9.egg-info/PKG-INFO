@@ -1,10 +1,10 @@
-Metadata-Version: 2.1
+Metadata-Version: 2.4
 Name: uuid-v9
-Version: 0.2.0
+Version: 1.0.0
 Summary: Fast, lightweight, zero-dependency Python implementation of UUID version 9
 Home-page: https://uuidv9.jhunt.dev
 Author: JHunt
-Author-email: mail@jhunt.dev
+Author-email: mail+uuidv9@jhunt.dev
 Platform: any
 Classifier: Intended Audience :: Developers
 Classifier: Topic :: Software Development :: Libraries
@@ -14,12 +14,22 @@ Classifier: Operating System :: OS Independent
 Requires-Python: >=3.8
 Description-Content-Type: text/markdown
 License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: platform
+Dynamic: requires-python
+Dynamic: summary
 
 # UUID v9
 
-Fast, lightweight, zero-dependency Python implementation of the UUID version 9 proposal.
+## Fast, lightweight, zero-dependency Python implementation of UUID version 9
 
-The v9 UUID supports both sequential (time-based) and non-sequential (random) UUIDs with an optional prefix of up to four bytes, an optional checksum, and sufficient randomness to avoid collisions. It uses the UNIX timestamp for sequential UUIDs and CRC-8 for checksums. A version digit can be added if desired, but is omitted by default.
+The v9 UUID supports both sequential (time-based) and non-sequential (random) UUIDs with an optional prefix of up to four bytes, an optional checksum, and sufficient randomness to avoid collisions. It uses the UNIX timestamp for sequential UUIDs and CRC-8 for checksums. The version can be added if desired, but is omitted by default.
 
 To learn more about UUID v9, please visit the website: https://uuidv9.jhunt.dev
 
@@ -57,7 +67,7 @@ python3 uuid_v9.py
 python3 uuid_v9.py --prefix 'a1b2c3d4' # add a prefix
 python3 uuid_v9.py --random # omit the timestamp
 python3 uuid_v9.py --checksum # add a CRC-8 checksum
-python3 uuid_v9.py --version # add a version 9 digit
+python3 uuid_v9.py --version # add version 9 identifiers
 python3 uuid_v9.py --legacy # legacy mode (see Backward Compatibility below)
 ```
 
@@ -74,3 +84,5 @@ _*Legacy mode adds version and variant digits to immitate v1 or v4 UUIDs dependi
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+<><
