@@ -2,7 +2,7 @@
 
 ## Fast, lightweight, zero-dependency Python implementation of UUID version 9
 
-The v9 UUID supports both sequential (time-based) and non-sequential (random) UUIDs with an optional prefix of up to four bytes, an optional checksum, and sufficient randomness to avoid collisions. It uses the UNIX timestamp for sequential UUIDs and CRC-8 for checksums. A version digit can be added if desired, but is omitted by default.
+The v9 UUID supports both sequential (time-based) and non-sequential (random) UUIDs with an optional prefix of up to four bytes, an optional checksum, and sufficient randomness to avoid collisions. It uses the UNIX timestamp for sequential UUIDs and CRC-8 for checksums. The version can be added if desired, but is omitted by default.
 
 To learn more about UUID v9, please visit the website: https://uuidv9.jhunt.dev
 
@@ -40,7 +40,7 @@ python3 uuid_v9.py
 python3 uuid_v9.py --prefix 'a1b2c3d4' # add a prefix
 python3 uuid_v9.py --random # omit the timestamp
 python3 uuid_v9.py --checksum # add a CRC-8 checksum
-python3 uuid_v9.py --version # add a version 9 digit
+python3 uuid_v9.py --version # add version 9 identifiers
 python3 uuid_v9.py --legacy # legacy mode (see Backward Compatibility below)
 ```
 
